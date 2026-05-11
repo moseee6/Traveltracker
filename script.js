@@ -160,13 +160,13 @@ function showDetails(stadiumId) {
         
         <div class="todo-section">
             <h4>Matchday To-Do List:</h4>
-            ${taskListHtml}
+            ${taskListHtml]
         </div>
         
         <button class="btn-close" onclick="this.parentElement.classList.add('hidden')">Close Details</button>
-    `;
+    `
     
     
-    detailsContainer.scrollIntoView({ behavior: 'smooth' });
+    detailsContainer.scrollIntoView({ behavior: 'smooth' })
 }
 
