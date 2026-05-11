@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stadium Tracker Pro | Ultimate Matchday Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <header class="main-header">
+            <div class="header-content">
+                <h1>Stadium Tracker <span class="badge">PRO</span></h1>
+                <p class="subtitle">Document your journey through the world's greatest sporting cathedrals.</p>
+            </div>
+        </header>
+
+        <section class="stats-bar grid-layout" style="margin-bottom: 30px;">
+            <div class="card stat-card">
+                <div class="stat-icon">🏟️</div>
+                <div class="stat-info">
+                    <label>Total Stadiums Visited</label>
+                    <div id="stat-count">0</div>
+                </div>
+            </div>
+            <div class="card stat-card">
+                <div class="stat-icon">👤</div>
+                <div class="stat-info">
+                    
+                </div>
+            </div>
+            <div class="card stat-card">
+                <div class="stat-icon">⭐</div>
+                <div class="stat-info">
+                    <label>Next Milestone</label>
+                    <div>10 Stadiums</div>
+                </div>
+            </div>
+        </section>
+
+        <main class="grid-layout">
+            
+            <section class="form-container">
+                <div class="card">
+                    <h2>Add New Destination</h2>
+                    <p class="text-dim">Enter the details of your latest matchday experience below.</p>
+                    <hr class="divider">
+                    
+                    <form id="places-form">
+                        <div class="input-group">
+                            <label for="loc">Stadium Name & Location</label>
+                            <input type="text" id="loc" placeholder="e.g. Santiago Bernabéu, Madrid" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="land">Iconic Landmarks</label>
+                            <input type="text" id="land" placeholder="e.g. Statue of Bobby Moore">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="time">Best Time to Visit</label>
+                            <input type="text" id="time" placeholder="e.g. Derby Day / Night Games">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="user-tasks">Matchday To-Do List (Custom)</label>
+                            <textarea id="user-tasks" rows="3" placeholder="Enter tasks separated by commas (e.g. Buy a scarf, visit the museum, eat a local burger)"></textarea>
+                            <small class="hint">Our system will automatically format these into a checklist.</small>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="notes">Experience & Atmosphere</label>
+                            <textarea id="notes" rows="4" placeholder="How was the crowd? What was the highlight of the trip?"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary">Save to Log</button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="list-container">
+                <div class="card">
+                    <h2>Saved Destinations</h2>
+                    <p class="text-dim">Click on a location card to view your full itinerary and custom tasks.</p>
+                    <hr class="divider">
+                    
+                    <ul id="output-list" class="destination-list"></ul>
+
+                    <div id="details" class="details-panel hidden">
+                        </div>
+                </div>
+            </section>
+
+        </main>
+
+        <section class="card profile-section" style="margin-top: 40px;">
+            <div class="grid-layout">
+                <div class="profile-text">
+                    <h2>Personalize Your Dashboard</h2>
+                    <p class="text-dim">Update your contact information so it appears on your stadium reports.</p>
+                </div>
+                <form id="user-info-form" class="inline-form">
+                    <input type="text" id="user-name" placeholder="Your Full Name" required>
+                    <input type="text" id="user-phone" placeholder="Phone Number" required>
+                    <button type="submit" class="btn-secondary">Update Profile</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="tips-grid" style="margin-top: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+            <div class="card tip-card">
+                <h3>💡 Pro Tip: Transport</h3>
+                <p>Always check local matchday shuttle routes to avoid stadium traffic jams.</p>
+            </div>
+            <div class="card tip-card">
+                <h3>🎫 Pro Tip: Tickets</h3>
+                <p>Keep a digital backup of your QR code in case your data connection fails at the gate.</p>
+            </div>
+            <div class="card tip-card">
+                <h3>📸 Pro Tip: Photos</h3>
+                <p>The best lighting for stadium exterior shots is usually 60 minutes before sunset.</p>
+            </div>
+        </section>
+
+        <footer class="main-footer">
+            <div class="footer-content">
+                <p>Stadium Tracker Pro &copy; 2026 | Built for the Ultimate Fan</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Support</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
