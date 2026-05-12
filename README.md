@@ -3,7 +3,8 @@
 Author:** Moses Emonde- student at Moringa School
 
  Description
-A comprehensive application to manage personal contacts and track travel destinations.
+ 
+This is a comprehensive application to manage personal contacts and track travel destinations.
 
  Setup Instructions
 1. Clone this repository.
