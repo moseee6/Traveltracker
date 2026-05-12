@@ -12,7 +12,7 @@ StadiumLog.prototype.addDestination = function(stadiumObject)
     this.idCounter += 1;
     stadiumObject.id = this.idCounter;
     this.destinations[stadiumObject.id] = stadiumObject;
-    console.log("Successfully saved:", stadiumObject.location);
+    console.log(" saved:", stadiumObject.location);
 };
 
 
